@@ -1,0 +1,111 @@
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+	font-size: 12px;
+	font-weight: 100;
+	line-height: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+div,
+ul,
+li {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	list-style-type: none;
+}
+
+#header {
+	padding: 10px;
+}
+
+#header h1 {
+	font-size: 22px;
+	line-height: 26px;
+	padding: 10px;
+}
+
+.menu-row {
+	background-color: rgba(0, 0, 0, .05);
+	height: 36px;
+}
+
+.demo1 {
+	left: 10px;
+}
+
+.demo2 {
+	left: 41%;
+}
+
+.demo3 {
+	right: 10px;
+}
+
+/* --- */
+
+.my-menu {
+	position: absolute;
+	font-family: sans-serif;
+	cursor: pointer;
+}
+
+.my-menu .my-menu-toggle,
+.my-menu .my-menu-list,
+.my-menu .my-nested-list {
+	width: 200px;
+}
+
+
+.my-menu .my-menu-title {
+	pointer-events: none;
+}
+
+.my-menu .my-menu-toggle,
+.my-menu .my-menu-item,
+.my-menu .my-nested-item {
+	position: relative;
+}
+
+.my-menu .my-menu-list {
+	display: none;
+}
+
+.my-menu .my-menu-toggle,
+.my-menu .my-menu-list,
+.my-menu .my-nested-list {
+	background-color: rgba(0, 0, 0, .1);
+}
+
+.my-menu .my-menu-toggle,
+.my-menu .my-menu-item,
+.my-menu .my-nested-item {
+	padding: 10px;
+}
+
+.my-menu .my-nested-list {
+	display: none;
+	left: 200px;
+	position: absolute;
+	top: 0;
+}
+
+.my-menu.left .my-nested-list {
+	left: -200px;
+}
+
+.my-menu .my-menu-item:hover,
+.my-menu .my-nested-item:hover  {
+	background-color: rgba(0, 0, 0, .1);
+}
+
+.my-menu:hover .my-menu-list,
+.my-menu .my-menu-item:hover .my-nested-list {
+	display: block;
+}
